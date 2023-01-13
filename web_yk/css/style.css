@@ -215,10 +215,19 @@ button {
     padding-bottom: 0px;
 }
 
+.header_section_1 {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-size: 100%;
+    padding: 10px 0px 25px 0px;
+    background-repeat: no-repeat;
+    background-image: url('../images/ba.png');
+}
+
 .header_section {
     width: 100%;
     float: left;
-    background-color: #ace1ff;
     height: auto;
     background-size: 100%;
     padding: 10px 0px 25px 0px;
@@ -247,12 +256,14 @@ button {
 .navbar {
     padding: .5rem 70px;
 }
+
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
     color: #055af8;
 }
 
 .banner_section {
     width: 100%;
+    height: 800px;
     float: left;
     padding-bottom: 105px;
 }
@@ -297,9 +308,55 @@ button {
     float: left;
     font-size: 18px;
     color: white;
-    background-color: #055af8;
+    background-color: #000;
     text-align: center;
     padding: 10px 0px;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    /* We need this to position
+        span inside button */
+    position: relative;
+    overflow: hidden;
+    top: 300px;
+    box-shadow: 6px 7px 40px -4px 
+                rgba(0, 0, 0, 0.2);
+}
+
+.more_bt a:hover {
+    background-color: #055af8;
+}
+
+.btn span {
+    position: absolute;
+    border-radius: 50%;
+    /* To make it round */
+    background-color: rgba(0, 0, 0, 0.3);
+
+    width: 100px;
+    height: 100px;
+    margin-top: -50px;
+    /* for positioning */
+    margin-left: -50px;
+
+    animation: ripple 1s;
+    opacity: 0;
+}
+
+/* Add animation */
+@keyframes ripple {
+    from {
+        opacity: 1;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: scale(10);
+    }
 }
 
 .contact_bt {
@@ -316,11 +373,23 @@ button {
     background-color: #000;
     text-align: center;
     padding: 10px 0px;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    /* We need this to position
+        span inside button */
+    position: relative;
+    top: 300px;
+    overflow: hidden;
+    box-shadow: 6px 7px 40px -4px 
+                rgba(0, 0, 0, 0.2);
 }
 
 .contact_bt a:hover {
-    color: #ace1ff;
-    background-color: #ace1ff;
+    background-color: #055af8;
 }
 
 #main_slider .carousel-control-prev:hover,
@@ -341,8 +410,6 @@ button {
     position: absolute;
     left: 120px;
     top: 85%;
-    border: 4px solid #055af8;
-    color: #055af8;
 }
 
 #main_slider .carousel-control-prev,
@@ -489,6 +556,18 @@ button {
     background-color: #3c7bf1;
     padding: 7px 0px;
     text-align: center;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    /* We need this to position
+        span inside button */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 6px 7px 40px -4px 
+                rgba(0, 0, 0, 0.2);
 }
 
 .getquote_bt_1 a:hover {
@@ -618,15 +697,15 @@ button {
 }
 
 .daily_text_1 {
-    width: 40%;
-    margin: 0 auto;
+    /* width: 40%;
+    margin: 0 auto; */
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 26px;
     display: block;
     color: #fff;
     line-height: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 15px;
 }
 
 .getquote_bt {
@@ -644,6 +723,18 @@ button {
     padding: 7px 0px;
     text-align: center;
     margin-top: 50px;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    /* We need this to position
+        span inside button */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 6px 7px 40px -4px 
+                rgba(0, 0, 0, 0.2);
 }
 
 .getquote_bt a:hover {
@@ -932,6 +1023,18 @@ input.Enter_text::placeholder {
     text-align: center;
     padding: 7px 0px;
     text-transform: uppercase;
+
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+
+    /* We need this to position
+        span inside button */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 6px 7px 40px -4px 
+                rgba(0, 0, 0, 0.2);
 }
 
 .social_icon {
